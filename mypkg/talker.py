@@ -3,10 +3,10 @@ from rclpy.node import Node
 from std_msgs.msg import Int16 #使う型を変更
 
 class Talker():
-    def __init__(self, node_ref):  # オブジェクトを作ると呼ばれる関数
+    def __init__(self, node):  # オブジェクトを作ると呼ばれる関数
         self.pub = node.create_publisher(Int16, "countup", 10)
         self.n = 0
-        node_ref.create_timer(0.5, self, cb)
+        node.create_timer(0.5, self, cb)
 
     def cb(self):
         msg = Int16()         #受信するデータの型を変更
@@ -14,7 +14,11 @@ class Talker():
         talker.pub.publish(msg)
         talker.n += 1
 
-rclpy.init()
-node = Node("talker")
-talker = Talker(node)
-rclpy.spin(node)
+def main():
+    rclpy.init()
+    node = Node("talker")
+    talker = Talker(node)
+    rclpy.spin(node)
+
+if __name__ == '__main__':
+    main()
