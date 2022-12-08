@@ -6,13 +6,13 @@ class Talker():
     def __init__(self, node):  # オブジェクトを作ると呼ばれる関数
         self.pub = node.create_publisher(Int16, "countup", 10)
         self.n = 0
-        node.create_timer(0.5, self, cb)
+        node.create_timer(0.5, self.cb)
 
     def cb(self):
         msg = Int16()         #受信するデータの型を変更
         msg.data = self.n
-        talker.pub.publish(msg)
-        talker.n += 1
+        self.pub.publish(msg)
+        self.n += 1
 
 def main():
     rclpy.init()
