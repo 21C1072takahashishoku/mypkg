@@ -1,9 +1,9 @@
 # mypkg
-ロボットシステム学のROS2パッケージ
+ロボットシステム学のROS2パッケージ  
 インストール
 
 ```
-$ git clone https://github.com/s21c1072/mypkg.git    
+$ git clone https://github.com/s21c1072/mypkg.git
 $ cd mypkg
 ```
 
