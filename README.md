@@ -1,4 +1,4 @@
-![test](https://github.com/s21c1072/mypkg/actions/workflows/test.yml/badge.svg)
+![test](https://github.com/s21c1072/ros2_ws/src/mypkg/actions/workflows/test.yml/badge.svg)
 # mypkg
 ロボットシステム学のROS2パッケージ  
 インストール
