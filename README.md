@@ -4,17 +4,18 @@
 
 ## 説明
 * messageの通信方法 topic通信
- * publisher: /talker
- * subscriber: /listner
- * topic: /countup
- * messageの型: int16
+* publisher: /talker
+* subscriber: /listner
+* topic: /countup
+* messageの型: int16
 
 ## 実行
-* /talker が数字をカウントし /countup を通じて送信、/listner がメッセージを受け取り表示
+* /talkerが数字をカウントし、/countupを通じて送信。/listnerがメッセージを受け取り表示する。
+一つ目の端末で
 ```
 ros2 run mypkg talker
 ```
-もう一つ端末を立ち上げてそこで
+別の端末を立ち上げ、そこで
 ```
 ros2 run mypkg listener
 ```
