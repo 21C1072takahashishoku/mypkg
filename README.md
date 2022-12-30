@@ -13,11 +13,11 @@
 * talkerが数字をカウントし、countupを通じて送信。listnerがメッセージを受け取り表示する。
 一つ目の端末で
 ```
-ros2 run mypkg talker
+$ ros2 run mypkg talker
 ```
 別の端末を立ち上げ、そこで
 ```
-ros2 run mypkg listener
+$ ros2 run mypkg listener
 ```
 
 ## 必要なソフトウェア
