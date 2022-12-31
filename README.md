@@ -5,12 +5,8 @@
 ## 説明
 * messageの通信方法 topic通信
 * messageの型: int16
-* publisher: talker
-* subscriber: listner
-* topic: countup
-
+* /talkerが数字をカウントし、/countupを通じて送信。/listnerがメッセージを受け取り表示する。
 ## 実行
-* talkerが数字をカウントし、countupを通じて送信。listnerがメッセージを受け取り表示する。
 一つ目の端末で
 ```
 $ ros2 run mypkg talker
@@ -22,12 +18,12 @@ $ ros2 run mypkg listener
 
 ## 必要なソフトウェア
 * Python
-  * テスト済み: 3.7〜3.10   
+  * バージョン:3.10.6   
 * ROS2
   * テスト済みバージョン: Humble
 
 ## テスト環境
-* Ubuntu
+* Ubuntu22.04.1LTS
 
 ## ライセンス
  * このソフトウェアパッケージは、3条項BSDライセンスのもと、再頒布および使用が許可されます。
