@@ -1,4 +1,6 @@
 #!/usr/bin/python3
+#PDX-FileCopyrightText: 2023 Shoku Takahashi　　　　　
+# SPDX-License-Identifier: BSD-3-Clause
 
 import rclpy
 from rclpy.node import Node
