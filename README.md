@@ -27,4 +27,4 @@ $ ros2 run mypkg listener
 
 ## ライセンス
  * このソフトウェアパッケージは、3条項BSDライセンスのもと、再頒布および使用が許可されます。
-  * © 2022 Shoku Takahashi
+  * © 2023 Shoku Takahashi
