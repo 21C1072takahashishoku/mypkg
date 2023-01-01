@@ -1,3 +1,5 @@
+#!/usr/bin/python3
+
 import rclpy
 from rclpy.node import Node
 from std_msgs.msg import Int16 #使う型を変更

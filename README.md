@@ -3,7 +3,7 @@
 ロボットシステム学のROS2パッケージ  
 
 ## 説明
-* messageの通信方法 topic通信
+* topic: /countup
 * messageの型: int16
 * /talkerが数字をカウントし、/countupを通じて送信。/listnerがメッセージを受け取り表示する。
 ## 実行
